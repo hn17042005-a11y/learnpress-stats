@@ -39,9 +39,9 @@ function lp_completed_courses() {
 // Hiển thị Dashboard
 function lp_stats_widget() {
     echo "<h3>Thống kê LearnPress</h3>";
-    echo "<p>📚 Tổng khóa học: " . lp_total_courses() . "</p>";
-    echo "<p>👨‍🎓 Tổng học viên: " . lp_total_students() . "</p>";
-    echo "<p>✅ Khóa học hoàn thành: " . lp_completed_courses() . "</p>";
+    echo "<p> Tổng khóa học: " . lp_total_courses() . "</p>";
+    echo "<p> Tổng học viên: " . lp_total_students() . "</p>";
+    echo "<p> Khóa học hoàn thành: " . lp_completed_courses() . "</p>";
 }
 
 // Thêm vào Dashboard
@@ -57,10 +57,10 @@ add_action('wp_dashboard_setup', 'lp_add_dashboard_widget');
 // Shortcode
 function lp_stats_shortcode() {
     $output = "<div style='padding:10px;border:1px solid #ccc'>";
-    $output .= "<h3>📊 Thống kê khóa học</h3>";
-    $output .= "<p>📚 Tổng khóa học: " . lp_total_courses() . "</p>";
-    $output .= "<p>👨‍🎓 Tổng học viên: " . lp_total_students() . "</p>";
-    $output .= "<p>✅ Hoàn thành: " . lp_completed_courses() . "</p>";
+    $output .= "<h3> Thống kê khóa học</h3>";
+    $output .= "<p> Tổng khóa học: " . lp_total_courses() . "</p>";
+    $output .= "<p> Tổng học viên: " . lp_total_students() . "</p>";
+    $output .= "<p> Hoàn thành: " . lp_completed_courses() . "</p>";
     $output .= "</div>";
 
     return $output;
